@@ -16,7 +16,7 @@ class task {
     // 1. a task should be able to be assigned a priority
     // 2. a task should be able to be assigned a deadline
     // 3. a task should be able to be assigned a status
-    // 4. a task should be able to be assigned a category
+    // 4. a task should be able to be asssigned a category
     // 5. a task should be able to be assigned a description
     // 6. a task should be able to be assigned a date
     // 7. a task should be able to have a 'gantt chart' like representation
