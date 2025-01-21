@@ -11,24 +11,16 @@ using std::string;
 // defining what a task is:
 class task {
     public:
-        string name;
-        string description;
-        int priority;
-        int dueDate;
-        int dueMonth;
-        int dueYear;
-        int status;
-
-
-        void inclTask(string name, string description, int priority, int dueDate, int dueMonth, int dueYear, int status) {
-            name = "Task";
-            description = "Description";
-            priority = 0;
-            dueDate = 0;
-            dueMonth = 0;
-            dueYear = 0;
-            status = 0;
-        }
+    string task_name; //not of any use. Declared for the sake of no errors
+    //the task class should define what a task is:
+    // 1. a task should be able to be assigned a priority
+    // 2. a task should be able to be assigned a deadline
+    // 3. a task should be able to be assigned a status
+    // 4. a task should be able to be assigned a category
+    // 5. a task should be able to be assigned a description
+    // 6. a task should be able to be assigned a date
+    // 7. a task should be able to have a 'gantt chart' like representation
+        // 7.a a task should be able to be assigned a time
 };
 
 int main() {
