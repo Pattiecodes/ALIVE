@@ -2,7 +2,6 @@
   "version": "0.2.0",
   "preLaunchTask": "C/C++: g++.exe build active file",
   "configurations": [
-    
     {
       "name": "(gdb) Launch",
       "type": "cppdbg",
@@ -35,8 +34,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/Documents/Coding/ALIVE_Task_Tracker",
-      "program": "d:/Documents/Coding/ALIVE_Task_Tracker/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

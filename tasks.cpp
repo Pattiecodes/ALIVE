@@ -1,31 +1,31 @@
 #include <iostream>
 #include <iomanip>
-#include <hstring.h>
+#include "task.h"
+
 
 using std::cout;
 using std::setw;
 using std::endl;
 using std::string;
+using std::cin;
 
-
-// defining what a task is:
-class task {
-    public:
-    string task_name; //not of any use. Declared for the sake of no errors
-    //the task class should define what a task is:
-    // 1. a task should be able to be assigned a priority
-    // 2. a task should be able to be assigned a deadline
-    // 3. a task should be able to be assigned a status
-    // 4. a task should be able to be asssigned a category
-    // 5. a task should be able to be assigned a description
-    // 6. a task should be able to be assigned a date
-    // 7. a task should be able to have a 'gantt chart' like representation
-        // 7.a a task should be able to be assigned a time
-};
 
 int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
+    task task;
+
+    cout << "Enter task name: ";
+    getline(cin, task.task_name);
+    // Call input methods to set dates
+    task.input_start_date();
+    task.input_due_date();
+
+    // Convert time points to time_t for printing
+    std::time_t start_time = std::chrono::system_clock::to_time_t(task.start_date);
+    std::time_t due_time = std::chrono::system_clock::to_time_t(task.due_date);
+
+    cout << "The task is: " << task.task_name << endl;
+    cout << "Starting on: " << std::ctime(&start_time);
+    cout << "Due on: " << std::ctime(&due_time);
 };
 
 
