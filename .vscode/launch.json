@@ -34,8 +34,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": ".",
-      "program": "build/Debug/outDebug",
+      "cwd": "d:/Documents/Coding/ALIVE_Task_Tracker",
+      "program": "d:/Documents/Coding/ALIVE_Task_Tracker/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
