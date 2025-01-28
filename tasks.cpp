@@ -21,15 +21,16 @@ int main() {
 void getMenu(){
     task task;
     taskList my_task_list;
+    check_status();
 
 
     char menu;
     cout << "1. Add Task" << endl;
     cout << "2. View Task" << endl;
     cout << "3. Edit Task" << endl; //include Delete task here
+    cout << "4. Exit Task" << endl;
     cin >> menu;
     cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // To ignore the newline character left in the input buffer
-
 
     if (menu == '1') { // We need to loop here, as well as show the other options, and not have it exit
         cout << "Enter task name: ";
@@ -51,11 +52,13 @@ void getMenu(){
         cout << "Due on: " << std::ctime(&due_time);
         
         my_task_list.list_tasks();
+        check_status();
     }
     else if (menu == '2'){
         // Output the list of tasks
         cout << "\nListing all tasks:\n";
         my_task_list.list_tasks();
+        check_status();
     } else {
         cout << "Invalid choice. Please try again." << endl;
     }
