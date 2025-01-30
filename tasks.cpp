@@ -62,7 +62,6 @@ void getMenu(){
     } else {
         cout << "Invalid choice. Please try again." << endl;
     }
-jjj
 }
 
 
