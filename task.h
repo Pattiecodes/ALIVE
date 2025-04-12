@@ -64,6 +64,7 @@
             return status;
         }
         int get_task_status() {
+            // change enum to maps (dsa)
             enum task_status {not_started, in_progress, done};
            cout << "Enter task status (0 for not started, 1 for in progress, 2 for done): ";
            int task_status_progress;
