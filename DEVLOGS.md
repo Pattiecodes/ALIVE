@@ -129,6 +129,7 @@ DEVLOGS:
     - 
 - General:
     - Removed node files. They were unnecessary.
+    - Edited gitignore files.
 
 ## Problems encountered:
 - 
