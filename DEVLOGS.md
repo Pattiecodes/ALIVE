@@ -145,6 +145,8 @@ DEVLOGS:
 - Logical Operators
 - Brush up on fundamentals.
 
+# Apr 14, 2025
+- No Wi-Fi (omg pldt!)
 
 ------------ Default ------------
 # Jan 30, 2025
